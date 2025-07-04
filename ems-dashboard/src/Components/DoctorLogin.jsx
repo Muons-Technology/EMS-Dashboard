@@ -27,10 +27,10 @@ export default function DoctorLogin() {
             <path d="M12 2L4 5v6.09c0 5.05 3.41 9.76 8 10.91 4.59-1.15 8-5.86 8-10.91V5l-8-3zm0 15c-2.76 0-5-2.24-5-5v-4.1l5-1.9 5 1.9V12c0 2.76-2.24 5-5 5zm1.65-2.65L13.5 14H16v-2h-2.5l.15-.85-1.8-1.8c.2-.23.15-.56-.1-.75-.23-.2-.56-.15-.75.1l-2 2c-.1.1-.15.25-.15.4 0 .26.21.5.5.5h2.29l-.14 1.35 1.8 1.8c-.2.23-.15.56.1.75.1.08.21.12.33.12.15 0 .3-.07.4-.2l2-2c.1-.1.15-.25.15-.4 0-.26-.21-.5-.5-.5h-2.29l.14-1.35z" />
           </svg>
         </div>
-        <h2 className="doctor-login-title">Physician Portal</h2>
-        <p className="doctor-login-subtitle">Secure access to patient records</p>
+        <h2 className="doctor-login-title">EMS Physician Portal</h2>
+        <p className="doctor-login-subtitle">Secure access to Emergency Medical Services system</p>
         
-        <form onSubmit={handleLogin} className="doctor-login-form">
+        <div className="doctor-login-form">
           <div className="input-group">
             <input
               type="email"
@@ -61,18 +61,18 @@ export default function DoctorLogin() {
           
           {error && <p className="login-error">{error}</p>}
           
-          <button type="submit" className="doctor-login-button">
+          <button type="submit" className="doctor-login-button" onClick={handleLogin}>
             <span className="button-text">Authenticate</span>
             <svg className="button-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
               <path d="M10.09 15.59L11.5 17l5-5-5-5-1.41 1.41L12.67 11H3v2h9.67l-2.58 2.59zM19 3H5c-1.11 0-2 .9-2 2v4h2V5h14v14H5v-4H3v4c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z" />
             </svg>
           </button>
-        </form>
+        </div>
         
         <div className="login-footer">
           <a href="/forgot-password" className="footer-link">Forgot credentials?</a>
           <span className="footer-divider">|</span>
-          <a href="/contact-admin" className="footer-link">Contact Hospital Admin</a>
+          <a href="/contact-admin" className="footer-link">Contact EMS Admin</a>
         </div>
       </div>
     </div>
