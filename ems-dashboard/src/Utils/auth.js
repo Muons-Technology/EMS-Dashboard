@@ -9,7 +9,6 @@ export const loginDoctor = async (email, password) => {
   try {
     const userCredential = await signInWithEmailAndPassword(auth, email, password);
     
-    // Additional verification if needed
     if (!userCredential.user) {
       throw new Error("No user returned from authentication");
     }
