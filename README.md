@@ -51,3 +51,10 @@ git clone https://github.com/your-username/ems-dashboard.git
 cd ems-dashboard
 npm install 
 npm run dev
+```
+
+###Login Details 
+---
+## Accounted user
+Ntokozo.Muon@ems.com
+Muons@1
