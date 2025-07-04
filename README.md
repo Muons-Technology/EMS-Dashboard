@@ -56,6 +56,6 @@ npm run dev
 Login Details 
 ---
 ## Accounted user
-Ntokozo.Muon@ems.com
+Ntokozo.Muons@ems.com
 
 Muons@1
